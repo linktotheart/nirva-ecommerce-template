@@ -1,0 +1,1176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>here | Nirva shopping Store</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
+    <!-- LINEAWESOME ICON CSS -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- MAIN STYLESHEET CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- owl carousel stylesheet CSS -->
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+</head>
+
+<!-- =============================
+Body starts here--
+============================= -->
+<body class="preload">
+  <div class="preloader" id="preloader">
+      <div class="spinner">
+        <div class="bubble-1"></div>
+        <div class="bubble-2"></div>
+      </div>
+  </div>
+
+  <header>
+    <div class="top-menu">
+      <!-- nav bar top starts here  -->
+      <div class="container px-0">
+        <div class="navbar-top">
+          <ul class="nav-left">
+            <li class="d-none d-md-block"><a href="javascript:void(0)">Welcome! To our store</a></li>
+            <li>
+              <select class="" name="currency" id="currency">
+                <option value="usd">US Dollar</option>
+                <option value="INR">Indian Rupee</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="nav-right">
+            <li><a class="d-inline-block" href="/blog.html">Blog</a></li>
+            <li><a class="faq" href="/faq.html">Faq</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- nav bar top starts here  -->
+    </div>
+
+
+<!-- =============================================================
+NAVIGATION BAR STARTS here
+============================================================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container position-relative">
+        <!-- button toggler navbar  -->
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#topNav"
+          aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="las la-2x la-bars text-black"></i>
+        </button>
+        <!--logo-->
+        <a class="ml-1 navbar-brand logo" href="/"><i class="las la-2x la-rainbow text-blue"></i><span>N</span>irva</a>
+        <!-- icon menu right bar -->
+        <div class="nav-icon d-flex flex-row order-lg-3 ml-auto">
+          <!-- icon menu  -->
+          <ul class="nav navbar-nav flex-row ml-auto">
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link search-open"><i class="las la-2x la-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link login-link" data-toggle="modal" data-target="#login">
+                <i class="las la-2x la-user"></i></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="las la-2x la-bookmark"></i></a>
+            </li> -->
+            <li class="nav-item shopping-cart-wrapper">
+              <a data-toggle="dropdown" class="dropdown-toggle nav-link" href="javascript:void(0)"
+                class="nav-link shopcart"><i class="las la-2x la-shopping-cart"></i> <span id="#shop-count"
+                  class="shopping-cart-count badge align-center badge-small rounded-pill badge-primary">6</span></a>
+
+              <div aria-labelledby="cartdetails" class="dropdown-menu">
+                <!-- cart item-->
+                <div class="dropdown-item cart-product">
+                  <div class="d-flex align-items-center">
+                    <div class="img"><img src="assets/prod1.jpg" alt="..." class="img-fluid"></div>
+                    <div class="details d-flex justify-content-between">
+                      <div class="text"> <a href="#"><strong>Yellow BRand Hoodie</strong></a><small>Quantity: 1
+                        </small><span class="price">$75.00 </span></div>
+                      <a href="#" class="delete"><i class="la la-trash-o"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- total price-->
+                <div class="dropdown-item total-price d-flex justify-content-between"><span>Total</span><strong
+                    class="text-blue">$75.00</strong></div>
+                <!-- call to actions-->
+                <div class="dropdown-item CTA d-flex"><a href="#" class="btn btn-secondary wide">View Cart</a><a
+                    href="#" class="btn btn-primary wide">Checkout</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse " id="topNav">
+          <ul class="navbar-nav uo-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <!--main menu links-->
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item dropper">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Men</a>
+              <div class="dropdown-menu wider">
+                <div class="menu-wrap-content container">
+                  <div class="row">
+                    <div class="col-lg-3 d-none d-lg-inline-block">
+                      <img src="assets/submen.jpg" alt="..." class="img-fluid">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Clothing</h3>
+                      <ul>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Shirting</h3>
+                      <ul>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Shoes</h3>
+                      <ul>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">Sandals</a></li>
+                        <li><a href="#">Hiking shoes</a></li>
+                        <li><a href="#">Casual</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropper">
+              <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#">Women</a>
+              <div class="dropdown-menu wider">
+                <div class="menu-wrap-content container">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Clothing</h3>
+                      <ul>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Dresses</h3>
+                      <ul>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Accessories</h3>
+                      <ul>
+                        <li><a href="#">Purse</a></li>
+                        <li><a href="#">Sandals</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">Casual</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-inline-block">
+                      <img src="assets/subwomen.jpg" alt="..." class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="nav-item dropper">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">KIDS</a>
+              <div class="dropdown-menu wider">
+                <div class="menu-wrap-content container">
+                  <div class="row">
+                    <div class="col-lg-3 d-none d-lg-inline-block">
+                      <img src="assets/submen2.jpg" alt="..." class="img-fluid">
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Formal</h3>
+                      <ul>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Casual</h3>
+                      <ul>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h3>Others</h3>
+                      <ul>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">Sandals</a></li>
+                        <li><a href="#">Hiking shoes</a></li>
+                        <li><a href="#">Casual</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropper">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Brands</a>
+              <div class="dropdown-menu wider">
+                <div class="menu-wrap-content container">
+                  <div class="row w-100">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h5>Homepage</h5>
+                      <ul>
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/">Homepage <span class="badge badge-success">New</span></a></li>
+                      </ul>
+                      <h5>Shop</h5>
+                      <ul>
+                        <li><a href="#">New Offers <span class="badge badge-success">New</span></a></li>
+                        <li><a href="#">New Offers</a></li>
+                        <li><a href="#">New Offers</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h5>User</h5>
+                      <ul>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">See cards</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payment</a></li>
+
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h5>Order process</h5>
+                      <ul>
+                        <li><a href="/cart.html">Shopping cart <span class="badge badge-danger">New</span></a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Favourite</a></li>
+                        <li><a href="#">Buy Again</a></li>
+                        <li><a href="#">Crash cards</a></li>
+
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                      <h5>Pages and blog</h5>
+                      <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About <span class="badge badge-danger">New</span></a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog <span class="badge badge-success">New</span></a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="text.html">Text page</a></li>
+                        <li><a href="404.html">404 page</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <!-- right menu  -->
+        <!--SEARCH BAR-->
+        <div class="search-bar">
+          <div class="inner">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button type="submit" class="submit"><i class="la la-search"></i></button> 
+          </div>
+          <span class="close-search d-lg-inline-block d-none">&times</span>
+          <span class="close-search d-lg-none d-inline-block"><i class="las la-arrow-left"></i></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+NAVIGATION MENU ENDS 
+===================================================== -->
+
+  </header>
+
+ <!-- LOGIN BOX MODAL===================== -->
+<div class="modal fade" id="login" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content  position-relative p-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body p-0">
+        <div class="login-wrapper">
+          <div class="login-box d-flex">
+
+            <div class="left-side">
+              <h3>Login</h3>
+              <p>Get access to Offers, place orders, wishlist items and more.</p>
+              <p class="mt-2">Don't have an account?         </p>
+              <p>Sign up <a href="/signup" class="badge badge-secondary badge-lg">Here</a> </p>
+            </div>
+
+            <div class="right-side">
+              <div class="login-form">
+                <form class="">
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"> <i class="las la-envelope-open"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </div>
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"> <i class="las la-lock"></i> </span>
+                    </div>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <div class="form-group d-flex justify-content-between">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Remember me
+                      </label>
+                    </div>
+
+                    <div class="form-lost">
+                      <a href="javascript:void(0)">Forget Password</a>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login in</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" -modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= heading main ===================  -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-md-12">
+      <div class="text-center heading-main">
+        <h1>MEN</h1>
+        <p class="lead subheading-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, earum!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ////////////// breadcrumb //////////////////// -->
+  <div class="row">
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center small">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+<main class="pb-5 my-5">
+<div class="row">
+  <div class="col-lg-3 col-xl-3">
+    <!--filters-->
+      <div class="filters">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">
+              <a href="#filter1" data-toggle="collapse" class="card-link ">Categories</a>
+            </h4>
+          </div>
+          <div id="filter1" class="collapse show" >
+            <div class="card-body">
+              <ul class="list-unstyled man-categ">
+                <li>
+                  <a href="#" class="d-flex justify-content-between align-items-center"><span>Men's Collection</span><small>200</small></a>
+                  <ul class="list-unstyled">
+                    <li> <a href="#">T-shirts</a></li>
+                    <li> <a href="#">Hoodies</a></li>
+                    <li> <a href="#">Jeans</a></li>
+                    <li> <a href="#">Shorts</a></li>
+                  </ul>
+                </li>
+                <li class="active"><a href="#" class="d-flex justify-content-between align-items-center"><span>Women's Collection</span><small>120</small></a>
+                  <ul class="list-unstyled">
+                    <li> <a href="#">T-shirts</a></li>
+                    <li> <a href="#">Dresses</a></li>
+                    <li> <a href="#">Jeans</a></li>
+                    <li> <a href="#">Shorts</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="d-flex justify-content-between align-items-center"><span>Accessories</span><small>80</small></a>
+                  <ul class="list-unstyled">
+                    <li> <a href="#">Wallets</a></li>
+                    <li> <a href="#">Backpacks</a></li>
+                    <li> <a href="#">Belts</a></li>
+                    <li> <a href="#">Necklaces</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">
+              <a href="#filter2" data-toggle="collapse" class="card-link ">Brands</a>
+            </h4>
+          </div>
+          <div id="filter2" class="collapse  show" >
+            <div class="card-body">
+              <div class="brands-list">
+                <!--brands-->
+                <form action="#" method="get">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand1">
+                    <label class="custom-control-label" for="brand1">Zara</label>  <span class="count text-muted">(96)</span>
+                  </div>
+                 
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand2">
+                    <label class="custom-control-label" for="brand2">Apple</label>  <span class="count text-muted">(96)</span>
+                  </div>
+                 
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand3">
+                    <label class="custom-control-label" for="brand3">H&amp;M <span class="badge badge-warning">HOT</span></label> <span class="count text-muted">(02)</span>
+                  </div>
+                 
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand4">
+                    <label class="custom-control-label" for="brand4">Reebuk</label> <span class="count text-muted">(96)</span>
+                  </div>
+                 
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand5">
+                    <label class="custom-control-label" for="brand5">Abibas</label> <span class="count text-muted">(69)</span>
+                  </div>
+                 
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand6">
+                    <label class="custom-control-label" for="brand6">banana</label> <span class="count text-muted">(78)</span>
+                  </div>
+                 
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="brand7">
+                    <label class="custom-control-label" for="brand7">oranges</label> <span class="count text-muted">(145)</span>
+                  </div>
+                
+                
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---colors filter-->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">
+              <a href="#filter4" data-toggle="collapse" class="card-link ">Colors</a>
+            </h4>
+          </div>
+          <div id="filter4" class="collapse  show" >
+            <div class="card-body">
+              <div class="color-filter">
+
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  <!--Price Filter -->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">
+              <a href="#filter5" data-toggle="collapse" class="card-link">Price</a>
+            </h4>
+          </div>
+          <div id="filter5" class="collapse  show" >
+            <div class="card-body">
+
+            </div>
+          </div>
+        </div>
+        
+        <!-- Size filter-->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">
+              <a href="#filter3" data-toggle="collapse" class="card-link"> Size</a>
+            </h4>
+          </div>
+          <div id="filter3" class="collapse show">
+            <div class="card-body">
+              <div class="custom-control custom-radio">
+                <input type="radio" id="size1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="size1">Small</label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input type="radio" id="size2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="size2">Medium</label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input type="radio" id="size3" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="size3">Large</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="size4" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="size4">X Large</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--filters-->
+  </div>
+  <div class="col-lg-9 col-xl-9">
+    <!-- products -->
+  <div class="action-filter-wrap d-flex justify-content-between align-items-start mb-2">
+    <span class="visible-items">Showing <strong>1-15 </strong>of <strong>158 </strong>results</span>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Sort</label>
+      </div>
+      <select class="custom-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">New</option>
+        <option value="2">Low price</option>
+        <option value="3">trending</option>
+        <option value="3">rating</option>
+      </select>
+    </div>
+  </div>
+  <div class="products py-4 py-lg-0">
+  <div class="row">
+     <!-- product 1 -->
+     <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <div class="wishlist-button">
+              <a href="#" class="wishlist-icon"><i class="la la-heart"></i></a>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod1.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">Man's PFP New Jacket Real RF SDD</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">4 <i class="las la-star"></i></span><span
+                class="count">(2)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$204</span>
+              <span class="new-price">$204</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product 2 -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <a href="javascript:void(0)"><img src="assets/prod2.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">woman's Red New Dress BB SKULL Star</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">4 <i class="las la-star"></i></span><span
+                class="count">(21)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$504</span>
+              <span class="new-price">$259</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product 3 -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <a href="javascript:void(0)"><img src="assets/prod3.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WMan's Red Gown New RF Brown Yellow XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(12)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$324</span>
+              <span class="new-price">$104</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product 4 -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-2">
+      <div class="product-item card">
+        <div class="card-body">
+          <div class="product-image">
+            <div class="prod-tag">
+              <span class="badge featured">featured</span>
+            </div>
+            <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+          </div>
+          <div class="text-truncate">
+            <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+          </div>
+          <div class="content-price">
+            <div class="card-subtitle rating">
+              <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                class="count">(9)</span>
+            </div>
+            <div class="price text-right card-text ">
+              <span class="old-price text-grey text-linethrough">$454</span>
+              <span class="new-price">$254</span>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button type="button" class="btn btn-primary btn-sm compare"><i
+                class="las la-2x la-random"></i></button>
+            <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+            <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                class="las la-2x la-search-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+</div>
+</main>
+
+</div>          <!-- /.container-->
+
+
+
+
+
+
+<footer class="bg-black pt-5 pb-1 mt-0">
+  <!--footer starts here-->
+<div class="container">
+  <div class="row my-3"> 
+    <div class="col-lg-3 col-12"><!--logo footer-->
+      <div class="logo-foot">
+        <a class="h1" href="#top"><i class="las la-rainbow la-2x"></i>Nirva</a>
+      </div>
+      <div class="address-foot text-white text-left">
+        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+           quod chol buun.</p>
+        <ul>
+          <li> <i class="las la-home"></i> lorem ipsum dolar, lorem</li>
+          <li><i class="las la-phone"></i> +101 789-456-123</li>
+          <li><i class="las la-envelope"></i>info@nirva.com</li>
+          <li><i class="las la-clock"></i> Mon - Fri/ 9am - 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-2 col-6"><!-- footer menu-->
+      <div class="foot-menu">
+        <div class="title-menu">
+          <h5>information</h5>
+        </div>
+          <ul class="nav flex-column navbar-dark">
+            <li class="nav-item">
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Store Location</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Shipping and Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Latest New</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Our Sitemap</a>
+            </li>
+            
+          </ul>
+      </div>
+    </div><!--info menu footer-->
+    <div class="col-lg-2 col-6">
+      <div class="foot-menu">
+        <div class="title-menu">
+          <h5>Our services</h5>
+        </div>
+          <ul class="nav flex-column navbar-dark">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Privacy and Policy</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Terms of Sale</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Costumer Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Delivery Information</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Payments</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Offers</a>
+            </li>
+          </ul>
+      </div>
+    </div><!-- services menu footer-->
+
+    <div class="col-lg-2 col-6">
+      <div class="foot-menu">
+        <div class="title-menu">
+          <h5>My account</h5>
+        </div>
+        <ul class="nav flex-column navbar-dark">
+          <li class="nav-item">
+            <a href="#" class="nav-link">My account</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Cart</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Checkout</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Tracking Order</a>
+          </li>
+        </ul>
+      </div>
+    </div><!--account menu footer-->
+
+    <div class="col-lg-3 col-md-6 col-6=12">
+      <div class="foot-menu social-menu">
+        <div class="title-menu">
+          <h5>follow us</h5>
+        </div>
+        <p class="text-white">Subscribe to our mailing list to get the new updates and offers.</p>
+        <form class="form-inline">
+          <input type="email" class="form-control form-control-sm" name="" id="" placeholder="Email address...">
+          <input type="button" class="btn btn-primary btn-sm" value="subscribe">
+        </form>
+        <div class="social-links d-flex mt-4">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#"><i class="lab la-3x la-facebook-square"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="lab la-3x la-twitter-square"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="lab la-3x la-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="lab la-3x la-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="las la-3x la-rss-square"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="lab la-3x la-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </div><!--social menu footer ends here -->
+  </div>
+</div><!--container ends here -->
+<div class="copyright-text text-center text-white mt-5 py-3">
+  <cite>Copyright <i class="las la-copyright"></i> 2020 | Nirva</cite>
+</div>
+</footer>
+
+
+<!-- jquery cdn -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- bootstrap popper js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<!-- bootstrap js cdn -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- owl carousel  -->
+<script src="scripts/owl.carousel.min.js"></script>
+<!-- custom script  -->
+<script src="scripts/script.js"></script>
+</body>
+</html>

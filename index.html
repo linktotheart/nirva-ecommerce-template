@@ -1,0 +1,1343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirva shopping Store</title>
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
+  <!-- LINEAWESOME ICON CSS -->
+  <link rel="stylesheet"   href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!-- MAIN STYLESHEET CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- owl carousel stylesheet CSS -->
+  <link rel="stylesheet" href="styles/owl.carousel.min.css">
+</head>
+
+<!-- =============================
+Body starts here--
+============================= -->
+
+<body class="preload">
+  <div class="preloader" id="preloader">
+    <div class="spinner">
+      <div class="bubble-1"></div>
+      <div class="bubble-2"></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="top-menu">
+      <!-- nav bar top starts here  -->
+      <div class="container px-0">
+        <div class="navbar-top">
+          <ul class="nav-left">
+            <li class="d-none d-md-block"><a href="javascript:void(0)">Welcome! To our store</a></li>
+            <li>
+              <select class="" name="currency" id="currency">
+                <option value="usd">US Dollar</option>
+                <option value="INR">Indian Rupee</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="nav-right">
+            <li><a class="d-inline-block" href="/blog.html">Blog</a></li>
+            <li><a class="faq" href="/faq.html">Faq</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- nav bar top starts here  -->
+    </div>
+
+
+<!-- =============================================================
+NAVIGATION BAR STARTS here
+============================================================= -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container position-relative">
+      <!-- button toggler navbar  -->
+      <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#topNav"
+        aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="las la-2x la-bars text-black"></i>
+      </button>
+      <!--logo-->
+      <a class="ml-1 navbar-brand logo" href="/"><i class="las la-2x la-rainbow text-blue"></i><span>N</span>irva</a>
+      <!-- icon menu right bar -->
+      <div class="nav-icon d-flex flex-row order-lg-3 ml-auto">
+        <!-- icon menu  -->
+        <ul class="nav navbar-nav flex-row ml-auto">
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link search-open"><i class="las la-2x la-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link login-link" data-toggle="modal" data-target="#login">
+              <i class="las la-2x la-user"></i></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="las la-2x la-bookmark"></i></a>
+          </li> -->
+          <li class="nav-item shopping-cart-wrapper">
+            <a data-toggle="dropdown" class="dropdown-toggle nav-link" href="javascript:void(0)"
+              class="nav-link shopcart"><i class="las la-2x la-shopping-cart"></i> <span id="#shop-count"
+                class="shopping-cart-count badge align-center badge-small rounded-pill badge-primary">6</span></a>
+
+            <div aria-labelledby="cartdetails" class="dropdown-menu">
+              <!-- cart item-->
+              <div class="dropdown-item cart-product">
+                <div class="d-flex align-items-center">
+                  <div class="img"><img src="assets/prod1.jpg" alt="..." class="img-fluid"></div>
+                  <div class="details d-flex justify-content-between">
+                    <div class="text"> <a href="#"><strong>Yellow BRand Hoodie</strong></a><small>Quantity: 1
+                      </small><span class="price">$75.00 </span></div>
+                    <a href="#" class="delete"><i class="la la-trash-o"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- total price-->
+              <div class="dropdown-item total-price d-flex justify-content-between"><span>Total</span><strong
+                  class="text-blue">$75.00</strong></div>
+              <!-- call to actions-->
+              <div class="dropdown-item CTA d-flex"><a href="./cart.html" class="btn btn-secondary wide">View Cart</a><a
+                  href="./index.html" class="btn btn-primary wide">Checkout</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse " id="topNav">
+        <ul class="navbar-nav uo-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <!--main menu links-->
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item dropper">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Men</a>
+            <div class="dropdown-menu wider">
+              <div class="menu-wrap-content container">
+                <div class="row">
+                  <div class="col-lg-3 d-none d-lg-inline-block">
+                    <img src="assets/submen.jpg" alt="..." class="img-fluid">
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Clothing</h3>
+                    <ul>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Shirting</h3>
+                    <ul>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Shoes</h3>
+                    <ul>
+                      <li><a href="#">Trainers</a></li>
+                      <li><a href="#">Sandals</a></li>
+                      <li><a href="#">Hiking shoes</a></li>
+                      <li><a href="#">Casual</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropper">
+            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#">Women</a>
+            <div class="dropdown-menu wider">
+              <div class="menu-wrap-content container">
+                <div class="row">
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Clothing</h3>
+                    <ul>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Dresses</h3>
+                    <ul>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Accessories</h3>
+                    <ul>
+                      <li><a href="#">Purse</a></li>
+                      <li><a href="#">Sandals</a></li>
+                      <li><a href="#">shoes</a></li>
+                      <li><a href="#">Casual</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 d-none d-lg-inline-block">
+                    <img src="assets/subwomen.jpg" alt="..." class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li class="nav-item dropper">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">KIDS</a>
+            <div class="dropdown-menu wider">
+              <div class="menu-wrap-content container">
+                <div class="row">
+                  <div class="col-lg-3 d-none d-lg-inline-block">
+                    <img src="assets/submen2.jpg" alt="..." class="img-fluid">
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Formal</h3>
+                    <ul>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Casual</h3>
+                    <ul>
+                      <li><a href="#">T-shirts</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h3>Others</h3>
+                    <ul>
+                      <li><a href="#">Trainers</a></li>
+                      <li><a href="#">Sandals</a></li>
+                      <li><a href="#">Hiking shoes</a></li>
+                      <li><a href="#">Casual</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropper">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Brands</a>
+            <div class="dropdown-menu wider">
+              <div class="menu-wrap-content container">
+                <div class="row w-100">
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h5>Homepage</h5>
+                    <ul>
+                      <li><a href="/">Homepage</a></li>
+                      <li><a href="/">Homepage <span class="badge badge-success">New</span></a></li>
+                    </ul>
+                    <h5>Shop</h5>
+                    <ul>
+                      <li><a href="#">New Offers <span class="badge badge-success">New</span></a></li>
+                      <li><a href="#">New Offers</a></li>
+                      <li><a href="#">New Offers</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h5>User</h5>
+                    <ul>
+                      <li><a href="#">Register</a></li>
+                      <li><a href="#">Login</a></li>
+                      <li><a href="#">See cards</a></li>
+                      <li><a href="#">Orders</a></li>
+                      <li><a href="#">Payment</a></li>
+
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h5>Order process</h5>
+                    <ul>
+                      <li><a href="/cart.html">Shopping cart <span class="badge badge-info">New</span></a></li>
+                      <li><a href="/category.html">Category</a><span class="badge badge-danger">NEW</span></li>
+                      <li><a href="/product.html">Product</a><span class="badge badge-warning">New</span></li>
+                      <li><a href="#">Buy Again</a></li>
+                      <li><a href="#">Crash cards</a></li>
+
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h5>Pages and blog</h5>
+                    <ul>
+                      <li><a href="/contact.html">Contact</a></li>
+                      <li><a href="/about.html">About <span class="badge badge-danger">New</span></a></li>
+                      <li><a href="/faq.html">FAQ</a></li>
+                      <li><a href="/blog.html">Blog <span class="badge badge-success">New</span></a></li>
+                      <li><a href="/contact.html">Contact</a></li>
+                      <li><a href="/text.html">Text page</a></li>
+                      <li><a href="/404.html">404 page <span class="badge badge-danger">New</span> </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <!-- right menu  -->
+      <!--SEARCH BAR-->
+      <div class="search-bar">
+        <div class="inner">
+          <input type="text" class="form-control" placeholder="Search...">
+          <button type="submit" class="submit"><i class="la la-search"></i></button> 
+        </div>
+        <span class="close-search d-lg-inline-block d-none">&times</span>
+        <span class="close-search d-lg-none d-inline-block"><i class="las la-arrow-left"></i></span>
+      </div>
+    </div>
+  </nav>
+
+    <!-- =====================================================
+NAVIGATION MENU ENDS 
+===================================================== -->
+
+  </header>
+  <!-- ======================================
+ LOGIN BOX MODAL
+ =========================================== -->
+  <!-- Modal -->
+  <div class="modal fade" id="login" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="login"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content  position-relative p-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body p-0">
+          <div class="login-wrapper">
+            <div class="login-box d-flex">
+
+              <div class="left-side">
+                <h3>Login</h3>
+                <p>Get access to Offers, place orders, wishlist items and more.</p>
+                <p class="mt-2">Don't have an account? </p>
+                <p>Sign up <a href="/signup" class="badge badge-secondary badge-lg">Here</a> </p>
+              </div>
+
+              <div class="right-side">
+                <div class="login-form">
+                  <form class="">
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"> <i class="las la-envelope-open"></i></span>
+                      </div>
+                      <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"> <i class="las la-lock"></i> </span>
+                      </div>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group d-flex justify-content-between">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+
+                      <div class="form-lost">
+                        <a href="javascript:void(0)">Forget Password</a>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login in</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" -modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--home-->
+  <section id="home">
+    <!-- =========================================================================
+SLIDER hero STARTS
+  ========================================================================= -->
+    <div class="container-fluid p-0">
+      <div id="heroSlider" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#heroSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#heroSlider" data-slide-to="1"></li>
+          <li data-target="#heroSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One  -->
+          <div class="carousel-item active" style="background-image: url('assets/slider1.jpg')">
+            <div class="carousel-caption">
+              <h2 class="display-4">Women's collection</h2>
+              <p class="black-badge">min 40% off flat purchase</p>
+              <p class="mt-3">
+                <a href="#products" class="btn btn-outline-primary">See More</a>
+              </p>
+            </div>
+          </div>
+          <!-- Slide Two -  -->
+          <div class="carousel-item" style="background-image: url('assets/slider2.jpg')">
+            <div class="carousel-caption text-left">
+              <h2 class="display-4"> merchandise and apparels</h2>
+              <p class="black-badge">Buy one get one free sale</p>
+              <p class="mt-3">
+                <a href="#categories" class="btn btn-outline-primary">See More</a>
+              </p>
+            </div>
+          </div>
+          <!-- Slide Three -->
+          <div class="carousel-item" style="background-image: url('assets/slider3.jpg')">
+            <div class="carousel-caption text-center">
+              <h2 class="display-4">choose from a <br /> of variety</h2>
+              <p class="black-badge">New and Exciting Offers</p>
+              <p class="mt-3">
+                <a href="#offers" class="btn btn-outline-primary">See More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#heroSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- =========================================================================
+SLIDER hero ENDS
+  ========================================================================= -->
+
+  <!-- =========================================================================
+OFFER STARTS
+========================================================================= -->
+  <section id="offers">
+    <div class="container  my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="offer-text text-right">
+            <h3>today's offer</h3>
+            <h5>50% flat off on women's</h5>
+            <a class="button btn btn-dark" href="#">EXPLORE <i class="las la-plus"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-12">
+          <div class="owl-carousel slider-offer">
+            <div class="item">
+              <a href="#">
+                <img src="assets/offer1.jpg" class="img-fluid float-right" alt="Alt 1">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#"></a>
+              <img src="assets/offer2.jpg" class="img-fluid float-right" alt="Alt 1">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#"></a>
+              <img src="assets/offer3.jpg" class="img-fluid float-right" alt="Alt 1">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =========================================================================
+OFFER ENDS
+=========================================================================  -->
+
+  <!-- =========================================================================
+CATEGORIES STARTS
+  ========================================================================= -->
+  <section id="categories">
+    <div class="container my-5">
+      <div class="row justify-content-center gradient-background">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card mx-0 cat-off">
+            <div class="card-body">
+              <h5 class="card-title">men's collection</h5>
+              <p class="card-text my-3">min 50% off</p>
+              <a href="#" class="btn btn-dark my-2">shop now</a>
+            </div>
+            <div class="bg-category">
+              <img src="assets/categories (1).jpg" alt="Asd">
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card cat-off">
+            <div class="card-body">
+              <h5 class="card-title">women's collection</h5>
+              <p class="card-text my-3">flat 50% off</p>
+              <a href="#" class="btn btn-dark my-2">shop now</a>
+            </div>
+            <div class="bg-category">
+              <img src="assets/categories (3).jpg" alt="Asd">
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card cat-off">
+            <div class="card-body">
+              <h5 class="card-title">fashion accessories </h5>
+              <p class="card-text my-3">min 50% off</p>
+              <a href="#" class="btn btn-dark my-2">shop now</a>
+            </div>
+            <div class="bg-category">
+              <img src="assets/categories (2).jpg" alt="Asd">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- =========================================================================
+CATEGORIES ENDS
+  ========================================================================= -->
+
+  <!-- =========================================================================
+PRODUCT STARTS
+  ========================================================================= -->
+  <section id="products">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading">
+            <h2>New Products</h2>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="row">
+
+          <!-- product 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <div class="prod-tag">
+                    <span class="badge featured">featured</span>
+                  </div>
+                  <div class="wishlist-button">
+                    <a href="#" class="wishlist-icon"><i class="la la-heart"></i></a>
+                  </div>
+                  <a href="javascript:void(0)"><img src="assets/prod1.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+                  <a href="#" class="card-title text-left">Man's PFP New Jacket Real RF SDD</a>
+                </div>
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">4 <i class="las la-star"></i></span><span
+                      class="count">(2)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$204</span>
+                    <span class="new-price">$204</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <a href="javascript:void(0)"><img src="assets/prod2.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+                  <a href="#" class="card-title text-left">woman's Red New Dress BB SKULL Star</a>
+                </div>
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">4 <i class="las la-star"></i></span><span
+                      class="count">(21)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$504</span>
+                    <span class="new-price">$259</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <a href="javascript:void(0)"><img src="assets/prod3.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+                  <a href="#" class="card-title text-left">WMan's Red Gown New RF Brown Yellow XXL</a>
+                </div>
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                      class="count">(12)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$324</span>
+                    <span class="new-price">$104</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <div class="prod-tag">
+                    <span class="badge featured">featured</span>
+                  </div>
+                  <a href="javascript:void(0)"><img src="assets/prod4.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+                  <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA XXL</a>
+                </div>
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                      class="count">(9)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$454</span>
+                    <span class="new-price">$254</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <a href="javascript:void(0)"><img src="assets/prod5.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+                  <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA</a>
+                </div>
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                      class="count">(78)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$454</span>
+                    <span class="new-price">$254</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product 6 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <a href="javascript:void(0)"><img src="assets/prod6.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+                  <a href="#" class="card-title text-left">WoMan's PFP New Jacket Black PULA</a>
+                </div>
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                      class="count">(69)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$454</span>
+                    <span class="new-price">$254</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 7 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <div class="prod-tag">
+                    <span class="badge featured">featured</span>
+                  </div>
+                  <a href="javascript:void(0)"><img src="assets/prod7.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+
+                  <a href="#" class="card-title text-left">Lorem ipsum's PFP New Jacket AS</a>
+                </div>
+
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                      class="count">(69)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$54</span>
+                    <span class="new-price">$4</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 8 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+            <div class="product-item card">
+              <div class="card-body">
+                <div class="product-image">
+                  <div class="prod-tag">
+                    <span class="badge featured">trending</span>
+                  </div>
+                  <a href="javascript:void(0)"><img src="assets/prod8.jpg" alt="" class="card-img-top"></a>
+                </div>
+                <div class="text-truncate">
+                  <a href="#" class="card-title text-left ">STar's JK New Al PUL Lorem Ipsum</a>
+                </div>
+                <div class="content-price">
+                  <div class="card-subtitle rating">
+                    <span class="rating-star badge badge-success">5 <i class="las la-star"></i></span><span
+                      class="count">(69)</span>
+                  </div>
+                  <div class="price text-right card-text ">
+                    <span class="old-price text-grey text-linethrough">$454</span>
+                    <span class="new-price">$254</span>
+                  </div>
+                </div>
+                <div class="product-buttons">
+                  <button type="button" class="btn btn-primary btn-sm compare"><i
+                      class="las la-2x la-random"></i></button>
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1">Add to Cart</button>
+                  <button type="button" class="btn btn-primary btn-sm quick-view"><i
+                      class="las la-2x la-search-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div> <!-- row -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================product ends here=============================== -->
+
+
+  <section id="categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading d-flex justify-content-between">
+            <h2>categories</h2>
+            <a href="#" class="header btn btn-primary py-1">See All</a>
+          </div>
+        </div>
+      </div>
+      <!---categories solider-->
+      <div class="row no-gutters">
+        <div id="category-slider" class="owl-carousel owl-theme">
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat1.jpg" alt="new">
+                <h3> Men's Wear</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat2.jpg" alt="new">
+                <h3> Women's Wear</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat3.jpg" alt="new">
+                <h3> Kid's Wear</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat4.jpg" alt="new">
+                <h3>Men's Footwear</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat5.jpg" alt="new">
+                <h3> Women's Footwear</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat6.jpg" alt="new">
+                <h3> Women's Accessories</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat7.jpg" alt="new">
+                <h3> Men's Wear</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-wrapper card">
+            <div class="picture">
+              <a href="#">
+                <img class="img-fluid" src="assets/cat8.jpg" alt="new">
+                <h3> Jackets</h3>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!---conatiner ends-->
+  </section>
+
+
+  <!-- =========================================================================
+FEATURE STARTS
+  ========================================================================= -->
+  <section id="features">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <!--feature free shipping-->
+          <div class="card features">
+            <div class="card-body d-flex">
+              <div class="feature-text">
+                <h4 class="title-feature">free shipping</h4>
+                <p class="text-muted">On all orders over $99</p>
+              </div>
+              <div class="icon-feature"><i class="las la-2x text-blue la-truck"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-6">
+          <!--feature RESTURN-->
+          <div class="card features">
+            <div class="card-body d-flex">
+              <div class="feature-text">
+                <h4 class="title-feature">easy return</h4>
+                <p class="text-muted">30 days return policy</p>
+              </div>
+              <div class="icon-feature"><i class="las la-2x text-blue la-sync"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-6">
+          <!--feature PAYMENT-->
+          <div class="card features">
+            <div class="card-body d-flex">
+              <div class="feature-text">
+                <h4 class="title-feature">secure payment</h4>
+                <p class="text-muted">100% secure payments</p>
+              </div>
+              <div class="icon-feature"><i class="las la-2x text-blue la-credit-card"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3  col-6">
+          <!--feature SUPPORT-->
+          <div class="card features">
+            <div class="card-body d-flex">
+              <div class="feature-text">
+                <h4 class="title-feature">24/7 support</h4>
+                <p class="text-muted">Dedicated support</p>
+              </div>
+              <div class="icon-feature"><i class="las la-2x text-blue la-comments"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===================================================================
+SUBSCRIBE STARTS HERE
+=========================================================================-->
+  <section id="subscribe">
+    <div class="container-fluid my-50 px-0">
+      <div class="subscribe-box text-center">
+        <div class="subscribe-inner">
+          <div class="container">
+            <div class="row justify-content-center">
+
+              <div class="col-12 col-md-10 col-lg-8">
+                <div class="wrapper-subs justify-content-center">
+                  <h2 class="mb-4">sign up and get 40% off</h2>
+                  <p class="lead mb-4">Sign up today for free and be the first to hear of special promotion, new
+                    Arrivals, designer and Offer news.</p>
+                  <form action="#" method="post">
+                    <div class="form-subscribe justify-content-center my-4 d-flex">
+                      <!-- form subscribe big  -->
+                      <input type="email" class="form-control w-75" name="email" id="subEmail"
+                        placeholder="You Email Address...">
+                      <input type="button" class="btn btn-primary w-25" value="subscribe">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===========================================
+SUBSCRIBE ENDS
+  ===================================================== -->
+
+
+  <!-- =========================================================================
+BLOG STARTS
+  ========================================================================= -->
+  <section id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-10 blog-post">
+          <!--blog 1-->
+          <div class="card">
+            <div class="card-img-top">
+              <img src="assets/blog (1).jpg" alt="aaa" class="img-fluid">
+
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">New blog post Just Updated</h5>
+              <p class="card-text">lorem ispsum dolar sit amet sola aes quot mai no sa pae losa din loca isim.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted ml-auto">28-Feb-2020</small>
+              <a href="#" class="float-right btn btn-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+        <!--blog 2-->
+        <div class="col-12 col-md-4 col-10 blog-post">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="assets/blog (2).jpg" alt="aaa" class="img-fluid">
+
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">New fashion store just opened</h5>
+              <p class="card-text">lorem ispsum dolar ola sit amet sola aes quot mai no sa pae losa din loca isim.</p>
+            </div>
+
+            <div class="card-footer">
+              <small class="text-muted">16-Oct-2019</small>
+              <a href="#" class="float-right btn btn-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--blog 3-->
+        <div class="col-12 col-md-4 col-10 blog-post">
+          <div class="card">
+            <div class="card-img-top">
+              <img src="assets/blog (3).jpg" alt="aaa" class="img-fluid">
+            </div>            <div class="card-body">
+              <h5 class="card-title text-truncate">Branded fashion accessories and more</h5>
+              <p class="card-text">lorem ispsum dolar sit amet sola aes quot mai no lol some sa pae losa din loca isim.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">28-Feb-2020</small>
+              <a href="#" class="float-right btn btn-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <!-- =========================================================================
+TESTIMONIAL 
+  ========================================================================= -->
+  <section id="testimonial">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-12 py-5">
+          <div id="test-slider" class="owl-carousel owl-theme">
+
+            <div class="item">
+              <div class="test-box las card">
+                <div class="test-img w-50">
+                  <img src="assets/testimonial (1).jpg" alt="new james doe" class="rounded-circle img-fluid">
+                  <div class="d-flex social-links justify-content-center">
+                    <a href="#" class="test-link"><i class="lab la-facebook"></i></a>
+                    <a href="#" class="test-link"><i class="lab la-twitter"></i></a>
+                    <a href="#" class="test-link"><i class="las la-external-link-square-alt"></i></a>
+
+                  </div>
+                </div>
+                <div class="test-body card-body text-center">
+                  <cite>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sat ad nesciunt quos amet illo eum
+                    commodi optio velit, itaque qui.</cite>
+                  <h4>James Doe <br> <span> Senior Web Designer </span></h4>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="test-box las card">
+                <div class="test-img w-50">
+                  <img src="assets/testimonial (2).jpg" alt="new james doe" class="rounded-circle img-fluid">
+                  <div class="d-flex social-links justify-content-center">
+                    <a href="#" class="test-link"><i class="lab la-facebook"></i></a>
+                    <a href="#" class="test-link"><i class="lab la-twitter"></i></a>
+                    <a href="#" class="test-link"><i class="las la-external-link-square-alt"></i></a>
+
+                  </div>
+                </div>
+                <div class="test-body card-body text-center">
+                  <cite>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sat ad nesciunt quos amet illo eum
+                    commodi optio velit, itaque qui.</cite>
+                  <h4>Jessica Doe <br> <span> CEO / Founder </span></h4>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <!--row ends here-->
+    </div>
+    <!--testimonial container ends here -->
+  </section>
+  <!-- ====================================
+TESTIMONIALS ENDS
+  ==================================== -->
+
+
+  <!--brands-->
+  <section id="brands">
+    <div class="container mb-4 py-4">
+      <div class="d-flex owl-carousel  brand-slider mw-100 align-items-center">
+        <!--slider stars here -->
+        <div class="brand-image">
+          <a href="#">
+            <img src="assets/brand (1).png" class="img-fluid" alt="ann taylor">
+          </a>
+        </div>
+        <div class="brand-image">
+          <a href="#">
+            <img src="assets/brand (2).png" class="img-fluid" alt="adidas">
+          </a>
+        </div>
+        <div class="brand-image">
+          <a href="#">
+            <img src="assets/brand (3).png" class="img-fluid" alt="coach">
+          </a>
+        </div>
+        <div class="brand-image">
+          <a href="#">
+            <img src="assets/brand (4).png" class="img-fluid" alt="levis">
+          </a>
+        </div>
+        <div class="brand-image">
+          <a href="#">
+            <img src="assets/brand (5).png" class="img-fluid" alt="nike">
+          </a>
+        </div>
+        <div class="brand-image">
+          <a href="#">
+            <img src="assets/brand (6).png" class="img-fluid" alt="lucky">
+          </a>
+        </div>
+        <div class="brand-image">
+          <a href="#">
+            <img src="assets/brand (7).png" class="img-fluid" alt="pink">
+          </a>
+        </div>
+      </div>
+      <!--slider stars here -->
+    </div>
+
+  </section>
+
+
+
+  <!--faq-->
+  <section id="Faq"></section>
+
+
+  <footer class="bg-black pt-5 pb-1 mt-5">
+    <!--footer starts here-->
+    <div class="container">
+      <div class="row my-3">
+        <div class="col-lg-3 col-12">
+          <!--logo footer-->
+          <div class="logo-foot">
+            <a class="h1" href="#top"><i class="las la-rainbow la-2x"></i>Nirva</a>
+          </div>
+          <div class="address-foot text-white text-left">
+            <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+              quod chol buun.</p>
+            <ul>
+              <li> <i class="las la-home"></i> lorem ipsum dolar, lorem</li>
+              <li><i class="las la-phone"></i> +101 789-456-123</li>
+              <li><i class="las la-envelope"></i>info@nirva.com</li>
+              <li><i class="las la-clock"></i> Mon - Fri/ 9am - 6pm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <!-- footer menu-->
+          <div class="foot-menu">
+            <div class="title-menu">
+              <h5>information</h5>
+            </div>
+            <ul class="nav flex-column navbar-dark">
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Store Location</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Shipping and Delivery</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Latest New</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Our Sitemap</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <!--info menu footer-->
+        <div class="col-lg-2 col-6">
+          <div class="foot-menu">
+            <div class="title-menu">
+              <h5>Our services</h5>
+            </div>
+            <ul class="nav flex-column navbar-dark">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Privacy and Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Terms of Sale</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Costumer Service</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Delivery Information</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Payments</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Offers</a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- services menu footer-->
+
+        <div class="col-lg-2 col-6">
+          <div class="foot-menu">
+            <div class="title-menu">
+              <h5>My account</h5>
+            </div>
+            <ul class="nav flex-column navbar-dark">
+              <li class="nav-item">
+                <a href="#" class="nav-link">My account</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">My Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">My Cart</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Checkout</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">My Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Tracking Order</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--account menu footer-->
+
+        <div class="col-lg-3 col-md-6 col-6=12">
+          <div class="foot-menu social-menu">
+            <div class="title-menu">
+              <h5>follow us</h5>
+            </div>
+            <p class="text-white">Subscribe to our mailing list to get the new updates and offers.</p>
+            <form class="form-inline">
+              <input type="email" class="form-control form-control-sm" name="" id="" placeholder="Email address...">
+              <input type="button" class="btn btn-primary btn-sm" value="subscribe">
+            </form>
+            <div class="social-links d-flex mt-4">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#"><i class="lab la-3x la-facebook-square"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><i class="lab la-3x la-twitter-square"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><i class="lab la-3x la-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><i class="lab la-3x la-linkedin"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><i class="las la-3x la-rss-square"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><i class="lab la-3x la-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--social menu footer ends here -->
+      </div>
+    </div>
+    <!--container ends here -->
+    <div class="copyright-text text-center text-white mt-5 py-3">
+      <cite>Copyright <i class="las la-copyright"></i> 2020 | Nirva</cite>
+    </div>
+  </footer>
+
+
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <!-- bootstrap js cdn -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- owl carousel  -->
+  <script src="scripts/owl.carousel.min.js"></script>
+  <!-- custom script  -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
